@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ProyectoRosa</string>
+    <string name="btn_recuerdos_text">Recuerdos</string>
+    <string name="btn_musica_text">Musica</string>
+    <string name="btn_frases_nuestras_text">Frases Nuestras</string>
+    <string name="fotos_text_view_text">Aqui Habra Fotos</string>
+    <string name="musica_text">Musica o Enlaces que lleven a videos de canciones</string>
+    <string name="frases_text">Frases que hemos dicho ella y yo</string>
 </resources>

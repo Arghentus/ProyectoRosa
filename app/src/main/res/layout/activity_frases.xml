@@ -13,6 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Frases que hemos dicho ella y yo"
+        android:text="@string/frases_text"
         android:textColor="#1A237E"/>
 </RelativeLayout>

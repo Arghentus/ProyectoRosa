@@ -13,6 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Musica o Enlaces que lleven a videos de canciones"
+        android:text="@string/musica_text"
         android:textColor="#1A237E"/>
 </RelativeLayout>

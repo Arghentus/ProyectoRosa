@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="262dp"
-        android:text="Aqui Habra Fotos"
+        android:text="@string/fotos_text_view_text"
         android:textColor="#1A237E"
         android:textStyle="bold"/>
 </RelativeLayout>

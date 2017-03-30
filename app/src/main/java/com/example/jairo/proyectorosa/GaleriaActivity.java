@@ -3,11 +3,11 @@ package com.example.jairo.proyectorosa;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Musica extends AppCompatActivity {
+public class GaleriaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_musica);
+        setContentView(R.layout.activity_galeria);
     }
 }

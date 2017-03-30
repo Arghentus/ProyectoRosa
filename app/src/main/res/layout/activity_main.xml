@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jairo.proyectorosa.MainActivity"
+    android:background="@drawable/hilorojo">
+
+    <Button
+        android:id="@+id/recuerdosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Recuerdos"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/galeria1"
+        android:drawableRight="@drawable/galeria1"/>
+
+    <Button
+        android:id="@+id/musicaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Musica"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_above="@+id/recuerdosButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/musica"
+        android:drawableRight="@drawable/musica"/>
+
+    <Button
+        android:id="@+id/frasesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Frases Nuestras"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_above="@+id/musicaButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/frase"
+        android:drawableRight="@drawable/frase"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frasesButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/corazones" />
+</RelativeLayout>

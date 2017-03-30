@@ -69,5 +69,5 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/corazones" />
+        app:srcCompat="@drawable/corazones"/>
 </RelativeLayout>

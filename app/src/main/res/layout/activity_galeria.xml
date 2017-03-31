@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jairo.proyectorosa.Galeria"
+    tools:context="com.example.jairo.proyectorosa.GaleriaActivity"
     android:background="@drawable/hilorojo">
 
     <TextView
@@ -15,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="262dp"
-        android:text="Aqui Habra Fotos"
+        android:text="@string/fotos_text_view_text"
         android:textColor="#1A237E"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 </RelativeLayout>

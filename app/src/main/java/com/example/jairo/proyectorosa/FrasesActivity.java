@@ -119,7 +119,7 @@ public class FrasesActivity extends AppCompatActivity {
             frasesEditText.setText("");
 
             //AÑADIMOS LA FRASE A LA LISTA, ASI NO HAY QUE RECARGARLA SIEMPRE QUE AGREGAMOS UNA...
-            //YA QUE EL CARGAR ESTA, CARGANDO TODAS
+            //YA QUE EL CARGAR ESTA CARGANDO TODAS
             frasesArrayList.add(fraseAAgregar);
         } catch (IOException ex) {
             ex.printStackTrace();

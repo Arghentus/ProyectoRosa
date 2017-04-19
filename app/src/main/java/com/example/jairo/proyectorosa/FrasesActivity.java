@@ -20,15 +20,18 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class FrasesActivity extends AppCompatActivity {
-    public static final int READ_BLOCK_SIZE = 200;
-    public EditText frasesEditText;
-    public RadioButton rosaRadioButton;
-    public RadioButton jairoRadioButton;
-    public Button agregarFraseButton;
-    public ListView frasesListView;
+    @BindView(R.id.agregarFraseButton)  Button agregarFraseButton;
+    @BindView(R.id.fraseEditText)  EditText frasesEditText;
+    @BindView(R.id.frasesListView)  ListView frasesListView;
+    @BindView(R.id.rosaRadioButton)  RadioButton rosaRadioButton;
+    @BindView(R.id.jairoRadioButton)  RadioButton jairoRadioButton;
+
     public ArrayAdapter<String> adapter;
-    public ArrayList<String> frasesArrayList ;
+    public ArrayList<String> frasesArrayList;
     static final String rosa = "Rosa";
     static final String jairo = "Jairo";
 
@@ -36,7 +39,7 @@ public class FrasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frases);
-        initViews();
+        ButterKnife.bind(this);
         frasesArrayList = new ArrayList<>();
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, frasesArrayList);
         frasesListView.setAdapter(adapter);

@@ -107,17 +107,22 @@ public class FrasesActivity extends AppCompatActivity {
             //http://stackoverflow.com/questions/4542318/android-append-text-file
             FileOutputStream outStream = openFileOutput("FrasesAutor.txt", MODE_APPEND);
             OutputStreamWriter archivo = new OutputStreamWriter(outStream);
+            String fraseAAgregar;
             if (rosaRadioButton.isChecked()) {
-                archivo.append(rosa + ": " + frase + "\n");
+                fraseAAgregar = rosa + ": " + frase + "\n";
             } else {
-                archivo.append(jairo + ": " + frase + "\n");
+                fraseAAgregar = jairo + ": " + frase + "\n";
             }
+            archivo.append(fraseAAgregar);
             archivo.flush();
             archivo.close();
             frasesEditText.setText("");
+
+            //AÑADIMOS LA FRASE A LA LISTA, ASI NO HAY QUE RECARGARLA SIEMPRE QUE AGREGAMOS UNA...
+            //YA QUE EL CARGAR ESTA, CARGANDO TODAS
+            frasesArrayList.add(fraseAAgregar);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        cargar();
     }
 }

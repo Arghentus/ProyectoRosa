@@ -33,7 +33,7 @@
         android:fontFamily="sans-serif"
         android:inputType="text"
         android:selectAllOnFocus="false"
-        android:text="@string/btn_frases_text"
+        android:hint="@string/btn_frases_text"
         android:textStyle="bold"
         />
 

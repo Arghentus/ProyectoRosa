@@ -70,15 +70,13 @@ public class FrasesActivity extends AppCompatActivity {
             }
         });
 
-        cargar();
     }
 
-    private void initViews() {
-        frasesEditText = (EditText) findViewById(R.id.fraseEditText);
-        rosaRadioButton = (RadioButton) findViewById(R.id.rosaRadioButton);
-        jairoRadioButton = (RadioButton) findViewById(R.id.jairoRadioButton);
-        agregarFraseButton = (Button) findViewById(R.id.agregarFraseButton);
-        frasesListView = (ListView) findViewById(R.id.frasesListView);
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //cagamos las frases una vez este lista la vista
+        cargar();
     }
 
     //Metodo para Recargar la ListView

@@ -98,23 +98,22 @@ public class FrasesActivity extends AppCompatActivity {
 
     public void agregar(View view) {
         String frase = frasesEditText.getText().toString();
-        try{
-            OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput("FrasesAutor.txt", MODE_PRIVATE));
-            if (rosaRadioButton.isChecked()){
-                archivo.write(rosa + ": " + frase + "\n");
-                archivo.flush();
-                archivo.close();
-            }else{
-                archivo.write(jairo + ": " + frase+ "\n");
-                archivo.flush();
-                archivo.close();
+        try {
+            //http://stackoverflow.com/questions/14872429/append-text-to-the-end-of-the-file
+            //http://stackoverflow.com/questions/4542318/android-append-text-file
+            FileOutputStream outStream = openFileOutput("FrasesAutor.txt", MODE_APPEND);
+            OutputStreamWriter archivo = new OutputStreamWriter(outStream);
+            if (rosaRadioButton.isChecked()) {
+                archivo.append(rosa + ": " + frase + "\n");
+            } else {
+                archivo.append(jairo + ": " + frase + "\n");
             }
+            archivo.flush();
+            archivo.close();
             frasesEditText.setText("");
-        }catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
         cargar();
-
     }
-
 }
